@@ -111,9 +111,8 @@ function PricingContent() {
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-50 border border-purple-100 text-purple-700 text-xs font-bold mb-4">
             <FaBolt className="text-[10px]" />
             One-Time Purchase · No Subscription
-          </div>
-          <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-800 mb-3">
-            Acquire Generation <span className="text-purple-650">Credits</span>
+          </div>          <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-800 mb-3">
+            Acquire Generation <span className="text-purple-600">Credits</span>
           </h1>
           <p className="text-slate-500 text-sm max-w-md mx-auto leading-relaxed">
             Each professional business email costs just <strong className="text-purple-700 font-extrabold">4 credits ($0.02)</strong>. Buy once, use anytime. Credits never expire.
@@ -178,7 +177,7 @@ function PricingContent() {
                   className={`w-full py-2.5 rounded-full font-bold text-xs transition-all flex items-center justify-center gap-2 cursor-pointer ${
                     isPopular
                       ? "bg-purple-600 hover:bg-purple-700 text-white shadow-sm hover:shadow-purple-200"
-                      : "bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-250 hover:border-slate-300"
+                      : "bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200 hover:border-slate-300"
                   } disabled:opacity-50 disabled:cursor-not-allowed`}
                 >
                   {loading === plan.id ? (

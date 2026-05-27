@@ -77,7 +77,7 @@ export default function GalleryPage() {
           </div>
           <button
             onClick={() => signIn("google")}
-            className="flex items-center gap-2 px-6 py-3 rounded-full bg-purple-650 text-white font-bold text-sm shadow-sm transition-all cursor-pointer"
+            className="flex items-center gap-2 px-6 py-3 rounded-full bg-purple-600 text-white font-bold text-sm shadow-sm transition-all cursor-pointer"
           >
             <FaGoogle />
             Sign in with Google
@@ -139,11 +139,11 @@ export default function GalleryPage() {
             <div className="w-20 h-20 rounded-2xl bg-slate-100 border border-slate-200 flex items-center justify-center mb-4">
               <FaMagic className="text-3xl text-slate-400 animate-float" />
             </div>
-            <h2 className="text-lg font-semibold text-slate-705 mb-2">No drafts generated yet</h2>
+            <h2 className="text-lg font-semibold text-slate-700 mb-2">No drafts generated yet</h2>
             <p className="text-slate-500 text-sm mb-6">Create your first cold outreach or pitch draft in the Studio.</p>
             <Link
               href="/"
-              className="px-6 py-2.5 rounded-full bg-purple-650 hover:bg-purple-750 text-white text-sm font-bold shadow-sm"
+              className="px-6 py-2.5 rounded-full bg-purple-600 hover:bg-purple-700 text-white text-sm font-bold shadow-sm"
             >
               Go to Studio →
             </Link>
@@ -168,7 +168,7 @@ export default function GalleryPage() {
                     </span>
                     <div className="flex items-center gap-1.5 shrink-0">
                       <StatusDot status={c.status} />
-                      <span className="text-[9px] px-2 py-0.5 rounded-full bg-slate-105 text-slate-650 font-bold">{c.tone}</span>
+                      <span className="text-[9px] px-2 py-0.5 rounded-full bg-slate-100 text-slate-600 font-bold">{c.tone}</span>
                     </div>
                   </div>
 
@@ -177,7 +177,7 @@ export default function GalleryPage() {
                     {c.status === "processing" ? (
                       <div className="flex-1 flex flex-col items-center justify-center gap-2">
                         <FaSpinner className="animate-spin text-purple-600 text-sm" />
-                        <span className="text-[9px] text-slate-550 font-medium">Generating email...</span>
+                        <span className="text-[9px] text-slate-500 font-medium">Generating email...</span>
                       </div>
                     ) : c.status === "completed" && data ? (
                       <>
@@ -198,7 +198,7 @@ export default function GalleryPage() {
                               e.stopPropagation();
                               handleCopyBody(c.id, data.emailBody + "\n\n" + data.signature);
                             }}
-                            className="flex items-center gap-1 px-3 py-1.5 rounded-full bg-purple-650 text-white text-[9px] font-bold shadow-sm cursor-pointer"
+                            className="flex items-center gap-1 px-3 py-1.5 rounded-full bg-purple-600 text-white text-[9px] font-bold shadow-sm cursor-pointer"
                           >
                             {isCopied ? <FaCheck className="text-[8px]" /> : <FaCopy className="text-[8px]" />}
                             {isCopied ? "Copied" : "Copy Body"}
@@ -237,12 +237,12 @@ export default function GalleryPage() {
           >
             <button
               onClick={() => setSelectedItem(null)}
-              className="absolute top-4 right-4 z-10 p-2 rounded-full bg-slate-105 hover:bg-red-50 text-slate-500 hover:text-red-650 border border-slate-200 transition-all cursor-pointer"
+              className="absolute top-4 right-4 z-10 p-2 rounded-full bg-slate-100 hover:bg-red-50 text-slate-500 hover:text-red-600 border border-slate-200 transition-all cursor-pointer"
             >
               <FaTimes className="text-xs" />
             </button>
             <h3 className="text-sm font-bold text-slate-800 mb-1 flex items-center gap-2">
-              <FaEnvelope className="text-purple-650 text-xs" />
+              <FaEnvelope className="text-purple-600 text-xs" />
               AI Showcase Draft Details
             </h3>
 
@@ -259,7 +259,7 @@ export default function GalleryPage() {
                       <span className="truncate font-medium">{subject}</span>
                       <button
                         onClick={() => handleCopySubject(idx, subject)}
-                        className="p-1.5 rounded-full bg-white hover:bg-slate-150 border border-slate-250 text-slate-500 hover:text-slate-800 transition-colors"
+                        className="p-1.5 rounded-full bg-white hover:bg-slate-100 border border-slate-200 text-slate-500 hover:text-slate-800 transition-colors"
                       >
                         {copiedSubjectId === idx ? <FaCheck className="text-emerald-500" /> : <FaCopy />}
                       </button>
@@ -285,7 +285,7 @@ export default function GalleryPage() {
             </div>
 
             {/* Modal Actions */}
-            <div className="flex items-center justify-between border-t border-slate-150 pt-4 mt-2">
+            <div className="flex items-center justify-between border-t border-slate-200 pt-4 mt-2">
               <div>
                 <p className="text-xs font-bold text-slate-700">Target Recipient: {selectedItem.recipient}</p>
                 <p className="text-[9px] text-slate-450 mt-0.5">
@@ -297,7 +297,7 @@ export default function GalleryPage() {
                   const data = getParsedText(selectedItem);
                   if (data) handleCopyBody(selectedItem.id, data.emailBody + "\n\n" + data.signature);
                 }}
-                className="flex items-center gap-2 px-4.5 py-2.5 rounded-full bg-purple-650 hover:bg-purple-750 text-white text-xs font-bold transition-all shadow-sm cursor-pointer"
+                className="flex items-center gap-2 px-4.5 py-2.5 rounded-full bg-purple-600 hover:bg-purple-700 text-white text-xs font-bold transition-all shadow-sm cursor-pointer"
               >
                 {copiedId === selectedItem.id ? <FaCheck className="text-xs text-emerald-400" /> : <FaCopy className="text-xs" />}
                 {copiedId === selectedItem.id ? "Copied Email!" : "Copy Full Email"}

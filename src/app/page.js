@@ -208,10 +208,10 @@ export default function StudioPage() {
         <section className="w-full md:w-5/12 border-r border-slate-200 bg-white p-6 md:overflow-y-auto overflow-visible flex flex-col gap-6">
           <div>
             <h1 className="text-xl font-extrabold text-slate-800 tracking-tight flex items-center gap-2">
-              <FaPaperPlane className="text-purple-650 text-sm" />
+              <FaPaperPlane className="text-purple-600 text-sm" />
               Email Studio
             </h1>
-            <p className="text-slate-550 text-xs mt-1">Compose highly engaging cold pitches, follow-ups, and requests using state-of-the-art AI.</p>
+            <p className="text-slate-500 text-xs mt-1">Compose highly engaging cold pitches, follow-ups, and requests using state-of-the-art AI.</p>
           </div>
 
           {/* Template Selectors */}
@@ -320,7 +320,7 @@ export default function StudioPage() {
               <button
                 type="button"
                 onClick={() => signIn("google")}
-                className="w-full flex items-center justify-center gap-2 mt-2 py-3 rounded-full bg-slate-105 hover:bg-slate-200 border border-slate-200 text-slate-700 font-bold text-xs transition-colors"
+                className="w-full flex items-center justify-center gap-2 mt-2 py-3 rounded-full bg-slate-100 hover:bg-slate-200 border border-slate-200 text-slate-700 font-bold text-xs transition-colors"
               >
                 <FaGoogle className="text-[10px] text-slate-400" />
                 Sign in with Google to Start
@@ -333,10 +333,10 @@ export default function StudioPage() {
         <section className="w-full md:w-7/12 p-6 md:overflow-y-auto overflow-visible bg-slate-50/50 flex flex-col gap-6">
           <div>
             <h2 className="text-sm font-bold text-slate-800 tracking-tight flex items-center gap-2">
-              <FaEnvelopeOpenText className="text-purple-650 text-xs animate-float" />
+              <FaEnvelopeOpenText className="text-purple-600 text-xs animate-float" />
               Generated Workspace Output
             </h2>
-            <p className="text-slate-550 text-[10px] mt-0.5">Real-time compilation of subject recommendations, editable drafts, and client linkages.</p>
+            <p className="text-slate-500 text-[10px] mt-0.5">Real-time compilation of subject recommendations, editable drafts, and client linkages.</p>
           </div>
 
           <div className="flex-1 flex flex-col gap-4 min-h-[300px]">
@@ -373,7 +373,7 @@ export default function StudioPage() {
                           className={`flex items-center justify-between gap-3 px-4 py-2.5 rounded-full border text-xs cursor-pointer transition-all ${
                             selectedSubject === subject
                               ? "border-purple-600 bg-purple-50 text-purple-700 font-bold"
-                              : "border-slate-200 hover:border-slate-350 bg-slate-50 text-slate-700 hover:text-slate-900"
+                              : "border-slate-200 hover:border-slate-300 bg-slate-50 text-slate-700 hover:text-slate-900"
                           }`}
                         >
                           <span className="truncate">{subject}</span>
@@ -446,7 +446,7 @@ export default function StudioPage() {
                 </div>
                 <div>
                   <h3 className="text-sm font-semibold text-slate-700">Workspace is empty</h3>
-                  <p className="text-[10px] text-slate-550 mt-1 max-w-xs leading-normal">
+                  <p className="text-[10px] text-slate-500 mt-1 max-w-xs leading-normal">
                     Enter target recipient and details on the left, choose your parameters, and click compose to generate business copies.
                   </p>
                 </div>

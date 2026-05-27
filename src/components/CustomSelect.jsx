@@ -21,7 +21,7 @@ export default function CustomSelect({ options, value, onChange, label, upward =
 
   return (
     <div className="flex flex-col gap-1.5 w-full select-none" ref={containerRef}>
-      {label && <span className="text-xs font-semibold text-slate-550">{label}</span>}
+      {label && <span className="text-xs font-semibold text-slate-500">{label}</span>}
       <div className="relative">
         {/* Toggle Button */}
         <button

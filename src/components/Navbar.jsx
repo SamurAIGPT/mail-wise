@@ -26,11 +26,11 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl px-4 h-14 flex items-center justify-between gap-4">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 shrink-0">
-          <div className="w-7 h-7 rounded-full bg-gradient-to-br from-purple-600 to-indigo-650 flex items-center justify-center shadow-sm">
+          <div className="w-7 h-7 rounded-full bg-gradient-to-br from-purple-600 to-indigo-700 flex items-center justify-center shadow-sm">
             <FaPaperPlane className="text-white text-[10px]" />
           </div>
           <span className="font-extrabold text-sm text-slate-800 tracking-tight hidden sm:block">
-            Mail-<span className="text-purple-650">Wise</span>
+            Mail-<span className="text-purple-600">Wise</span>
           </span>
         </Link>
 
@@ -43,7 +43,7 @@ export default function Navbar() {
               className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold transition-all ${
                 pathname === link.href
                   ? "bg-purple-50 text-purple-700 border border-purple-100/50"
-                  : "text-slate-600 hover:text-slate-900 hover:bg-slate-100"
+                  : "text-slate-650 hover:text-slate-900 hover:bg-slate-100"
               }`}
             >
               {link.icon}
@@ -87,7 +87,7 @@ export default function Navbar() {
                   <p className="text-[10px] text-slate-400 truncate mb-3">{session.user.email}</p>
                   <button
                     onClick={() => signOut()}
-                    className="w-full text-xs text-red-650 hover:text-red-750 hover:bg-red-50 py-1.5 px-2.5 rounded-full transition-all text-left font-bold"
+                    className="w-full text-xs text-red-600 hover:text-red-700 hover:bg-red-50 py-1.5 px-2.5 rounded-full transition-all text-left font-bold"
                   >
                     Sign out
                   </button>
@@ -98,7 +98,7 @@ export default function Navbar() {
             <button
               id="navbar-signin-btn"
               onClick={() => signIn("google")}
-              className="px-4.5 py-1.5 rounded-full bg-purple-650 hover:bg-purple-700 text-white text-xs font-bold transition-all shadow-sm"
+              className="px-4.5 py-1.5 rounded-full bg-purple-600 hover:bg-purple-700 text-white text-xs font-bold transition-all shadow-sm"
             >
               Sign in with Google
             </button>
@@ -138,7 +138,7 @@ export default function Navbar() {
                 className={`flex items-center gap-2 px-4 py-2.5 rounded-full text-sm font-bold transition-all ${
                   pathname === link.href
                     ? "bg-purple-50 text-purple-700 border border-purple-100/50"
-                    : "text-slate-650 hover:text-slate-900 hover:bg-slate-100"
+                    : "text-slate-600 hover:text-slate-900 hover:bg-slate-100"
                 }`}
               >
                 {link.icon}
@@ -163,7 +163,7 @@ export default function Navbar() {
                 </div>
                 <button
                   onClick={() => { signOut(); setMenuOpen(false); }}
-                  className="text-xs text-red-650 hover:text-red-700 px-3 py-1.5 rounded-full hover:bg-red-50 transition-all font-bold"
+                  className="text-xs text-red-600 hover:text-red-700 px-3 py-1.5 rounded-full hover:bg-red-50 transition-all font-bold"
                 >
                   Sign out
                 </button>
@@ -171,7 +171,7 @@ export default function Navbar() {
             ) : (
               <button
                 onClick={() => { signIn("google"); setMenuOpen(false); }}
-                className="w-full py-2.5 rounded-full bg-purple-650 text-white text-sm font-bold"
+                className="w-full py-2.5 rounded-full bg-purple-600 text-white text-sm font-bold"
               >
                 Sign in with Google
               </button>

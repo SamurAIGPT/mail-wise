@@ -6,7 +6,7 @@
 
 ## 🌐 Try the Live Engine
 
-**Hosted Demo:** [mail-wise.vercel.app](https://mail-wise.vercel.app/)
+**Hosted Demo:** [mail-wise-khaki.vercel.app](https://mail-wise-khaki.vercel.app/)
 
 Experience the full glassmorphic, responsive interface. Sign in with Google to explore the Studio, customize dropdowns (Language, Length, Tones, and Presets), and preview your high-converting business copies directly from your browser.
 
@@ -51,7 +51,7 @@ To successfully deploy and run, you must populate the following environment vari
 | **Database**          | `DATABASE_URL`                       | PostgreSQL connection string ([Supabase](https://supabase.com) shared pool with pgbouncer)  |
 |                       | `DIRECT_URL`                         | Direct DB connection for Prisma migrations and pushes                                        |
 | **NextAuth / Google** | `NEXTAUTH_SECRET`                    | Secure random string generated via `openssl rand -base64 32`                                 |
-|                       | `NEXTAUTH_URL`                       | Your production domain (e.g. `https://mail-wise.vercel.app`)                                  |
+|                       | `NEXTAUTH_URL`                       | Your production domain (e.g. `https://mail-wise-khaki.vercel.app`)                                  |
 |                       | `GOOGLE_CLIENT_ID`                   | Get from [Google Cloud Console](https://console.cloud.google.com/apis/credentials)           |
 |                       | `GOOGLE_CLIENT_SECRET`               | Get from [Google Cloud Console](https://console.cloud.google.com/apis/credentials)           |
 | **Stripe Billing**    | `STRIPE_SECRET_KEY`                  | Get from [Stripe Dashboard](https://dashboard.stripe.com/apikeys)                            |
