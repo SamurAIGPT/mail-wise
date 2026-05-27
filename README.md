@@ -1,6 +1,9 @@
-# 🚀 Mail-Wise — Elite AI Email Composer & Outreach Assistant
+# ✉️ Mail-Wise — Open-Source AI Email Composer & Cold Outreach SaaS (Free Lavender AI / Reply.io Alternative)
 
-> **A beautifully designed, fully-integrated AI Email Studio.** Built with Next.js, this SaaS application provides a complete, self-contained workspace for generating, previewing, and refining high-conversion business emails, cold outreach pitches, follow-ups, and apology drafts powered by MuAPI's LLM engine.
+> **Generate high-conversion business emails, cold outreach pitches, and follow-ups in seconds.** A production-ready, self-hostable Next.js SaaS boilerplate with template presets, tone & language controls, one-click mail dispatch, and built-in Stripe billing. A free open-source alternative to Lavender AI, Reply.io, Mailmodo, Superhuman AI, and Instantly.ai — powered by the MuAPI AI engine.
+
+**Tech stack:** Next.js 14 (App Router) · Prisma · PostgreSQL · NextAuth (Google OAuth) · Stripe · Tailwind CSS · MuAPI any-llm
+**Use cases:** Sales outreach teams · Cold email marketers · Freelancers · Recruiters · SaaS growth teams · Agency account managers · B2B founders · Business development reps
 
 ![Mail-Wise Workstation Screenshot](https://cdn.muapi.ai/data/2/280483013885/Screenshot_2026-05-27_193901.png)
 
