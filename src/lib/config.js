@@ -38,6 +38,7 @@ const LENGTHS = [
 ];
 
 const config = {
+  appName: "Mail Wise",
   auth: {
     google: {
       clientId: process.env.GOOGLE_CLIENT_ID,
