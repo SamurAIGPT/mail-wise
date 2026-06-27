@@ -4,7 +4,7 @@ export default function CustomToggle({ checked, onChange, label }) {
   return (
     <label className="flex items-center justify-between gap-3 cursor-pointer group select-none">
       {label && (
-        <span className="text-xs font-semibold text-slate-600 group-hover:text-slate-800 transition-colors">
+        <span className="text-xs font-semibold text-secondary-text group-hover:text-primary-text transition-colors">
           {label}
         </span>
       )}
@@ -19,8 +19,8 @@ export default function CustomToggle({ checked, onChange, label }) {
         <div
           className={`w-9 h-5 rounded-full border transition-all duration-350 ${
             checked
-              ? "bg-purple-600 border-purple-600"
-              : "bg-slate-200 border-slate-200 hover:border-slate-300"
+              ? "bg-primary border-primary"
+              : "bg-divider/50 border-divider/50 hover:border-primary/50"
           }`}
         />
         {/* Sliding Dot */}
