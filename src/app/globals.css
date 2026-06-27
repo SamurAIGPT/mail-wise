@@ -2,7 +2,7 @@
 
 @theme {
   --font-sans: var(--font-inter), sans-serif;
-  --font-outfit: var(--font-inter), sans-serif;
+  --font-outfit: var(--font-outfit), sans-serif;
   
   --color-bg-page: var(--bg-page, #09090b);
   --color-bg-card: var(--bg-card, #18181b);
